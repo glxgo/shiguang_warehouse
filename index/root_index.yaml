@@ -431,3 +431,8 @@ schools:
     name: "成都医学院"
     initial: "C"
     resource_folder: "CMC"
+
+  - id: "SDIPCT"
+    name: "山东石油化工学院"
+    initial: "S"
+    resource_folder: "SDIPCT"  
