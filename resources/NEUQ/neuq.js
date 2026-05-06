@@ -290,7 +290,7 @@
         if (allSemesters.length === 0) {
             throw new Error("学期列表为空，无法继续导入。");
         }
-        const recentSemesters = allSemesters.slice(-8);
+        const recentSemesters = allSemesters;
         const selectIndex = await window.AndroidBridgePromise.showSingleSelection(
             "请选择导入学期",
             JSON.stringify(recentSemesters.map((s) => s.name || s.id)),
