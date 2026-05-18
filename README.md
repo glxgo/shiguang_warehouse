@@ -1,6 +1,6 @@
-# shiguang_warehouse
+# heybuddy_warehouse
 
-本仓库用于 shiguangschedule 适配脚本的管理和测试。所有适配脚本将集中存放于此，方便软件拉取和测试。
+本仓库用于 heybuddy_schedule 适配脚本的管理和测试。所有适配脚本将集中存放于此，方便软件拉取和测试。
 
 **注意为避免代码出现问题，main分支启用分支保护，需要先合并到pending分支等待分支同步**
 
