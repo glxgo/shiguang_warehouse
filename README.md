@@ -1,4 +1,4 @@
-# shiguang_warehouse
+# shiguang_warehouse123
 
 本仓库用于 shiguangschedule 适配脚本的管理和测试。所有适配脚本将集中存放于此，方便软件拉取和测试。
 
