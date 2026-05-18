@@ -1,0 +1,9 @@
+# resources/XATU/adapters.yaml
+adapters:
+  - adapter_id: "XATU_01"
+    adapter_name: "西安工业大学"
+    category: "BACHELOR_AND_ASSOCIATE"
+    asset_js_path: "myschool_xatu.js"
+    import_url: "http://jwgl2018.xatu.edu.cn"
+    maintainer: "晨熯"
+    description: ""
