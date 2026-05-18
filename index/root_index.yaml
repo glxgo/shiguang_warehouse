@@ -496,25 +496,9 @@ schools:
     initial: "Z"          # 排序首字母
     resource_folder: "CAUC"   # 资源文件夹名称
 
-  - id: "CAUC_WEBVPN"    # id 唯一值
-    name: "中国民航大学正方教务(WebVPN)" # 名称
-    initial: "Z"          # 排序首字母
-    resource_folder: "CAUC_WEBVPN"   # 资源文件夹名称
 
-  - id: "ECJTU"    # id 唯一值
-    name: "华东交通大学教务系统" # 名称
-    initial: "H"          # 排序首字母
-    resource_folder: "ECJTU"   # 资源文件夹名称
 
-  - id: "NJTECH"    # id 唯一值
-    name: "南京工业大学正方教务" # 名称
-    initial: "N"          # 排序首字母
-    resource_folder: "NJTECH"   # 资源文件夹名称
 
-  - id: "WENHUA"    # id 唯一值
-    name: "文华学院正方教务" # 名称
-    initial: "W"          # 排序首字母
-    resource_folder: "WENHUA"   # 资源文件夹名称
 
   - id: "XATU"    # id 唯一值
     name: "西安工业大学" # 名称
@@ -530,4 +514,21 @@ schools:
     name: "浙江工业大学正方教务" # 名称
     initial: "Z"          # 排序首字母
     resource_folder: "ZJUT"   # 资源文件夹名称
+
+  - id: "CAUC_WEBVPN"    # id 唯一值
+    name: "中国民航大学正方教务(WebVPN)" # 名称
+    initial: "Z"          # 排序首字母
+    resource_folder: "CAUC_WEBVPN"   # 资源文件夹名称
+  - id: "ECJTU"    # id 唯一值
+    name: "华东交通大学教务系统" # 名称
+    initial: "H"          # 排序首字母
+    resource_folder: "ECJTU"   # 资源文件夹名称
+  - id: "NJTECH"    # id 唯一值
+    name: "南京工业大学正方教务" # 名称
+    initial: "N"          # 排序首字母
+    resource_folder: "NJTECH"   # 资源文件夹名称
+  - id: "WENHUA"    # id 唯一值
+    name: "文华学院正方教务" # 名称
+    initial: "W"          # 排序首字母
+    resource_folder: "WENHUA"   # 资源文件夹名称
 
