@@ -491,44 +491,44 @@ schools:
     name: "安徽中医药高等专科学校"
     initial: "A"
     resource_folder: "AHZYYGZ"
-  - id: "CAUC"    # id 唯一值
-    name: "中国民航大学正方教务" # 名称
-    initial: "Z"          # 排序首字母
-    resource_folder: "CAUC"   # 资源文件夹名称
+  
+  - id: "XATU"   
+    name: "西安工业大学" 
+    initial: "X"          
+    resource_folder: "XATU"   
 
+  - id: "NJTECH"    
+    name: "南京工业大学" 
+    initial: "N"          
+    resource_folder: "NJTECH"   
 
+  - id: "CAUC"    
+    name: "中国民航大学" 
+    initial: "Z"          
+    resource_folder: "CAUC"   
 
+  - id: "XYAFU"    
+    name: "信阳农林学院" 
+    initial: "X"          
+    resource_folder: "XYAFU"   
 
+  - id: "ZJUT"    
+    name: "浙江工业大学"
+    initial: "Z"          
+    resource_folder: "ZJUT"   
 
-  - id: "XATU"    # id 唯一值
-    name: "西安工业大学" # 名称
-    initial: "X"          # 排序首字母
-    resource_folder: "XATU"   # 资源文件夹名称
-
-  - id: "XYAFU"    # id 唯一值
-    name: "信阳农林学院青果教务" # 名称
-    initial: "X"          # 排序首字母
-    resource_folder: "XYAFU"   # 资源文件夹名称
-
-  - id: "ZJUT"    # id 唯一值
-    name: "浙江工业大学正方教务" # 名称
-    initial: "Z"          # 排序首字母
-    resource_folder: "ZJUT"   # 资源文件夹名称
-
-  - id: "CAUC_WEBVPN"    # id 唯一值
-    name: "中国民航大学正方教务(WebVPN)" # 名称
-    initial: "Z"          # 排序首字母
-    resource_folder: "CAUC_WEBVPN"   # 资源文件夹名称
-  - id: "ECJTU"    # id 唯一值
-    name: "华东交通大学教务系统" # 名称
-    initial: "H"          # 排序首字母
-    resource_folder: "ECJTU"   # 资源文件夹名称
-  - id: "NJTECH"    # id 唯一值
-    name: "南京工业大学正方教务" # 名称
-    initial: "N"          # 排序首字母
-    resource_folder: "NJTECH"   # 资源文件夹名称
-  - id: "WENHUA"    # id 唯一值
-    name: "文华学院正方教务" # 名称
-    initial: "W"          # 排序首字母
-    resource_folder: "WENHUA"   # 资源文件夹名称
+  - id: "CAUC_WEBVPN"    
+    name: "中国民航大学(WebVPN)" 
+    initial: "Z"          
+    resource_folder: "CAUC_WEBVPN"   
+    
+  - id: "ECJTU"   
+    name: "华东交通大学" 
+    initial: "H"          
+    resource_folder: "ECJTU"   
+  
+  - id: "WENHUA"    
+    name: "文华学院" 
+    initial: "W"          
+    resource_folder: "WENHUA"   
 
