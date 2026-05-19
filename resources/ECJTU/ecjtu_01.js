@@ -1,13 +1,21 @@
-// 文件: ECJTU_01.js
-// 功能：从华东交通大学系统获取课程表，解析后导入到拾光课程表
-// 适配：华东交通大学教务系统
-// 维护者：glxgo
-
 const BASE = window.location.origin;
 const SCHEDULE_PATHS = [
   '/Schedule/Schedule_getUserSchedume.action?item=0207',
   '/Schedule/Schedule_getUserSchedume.action?item=0205',
   '/Schedule/Schedule_getUserSchedume.action'
+];
+
+const TIME_SLOTS = [
+  { number: 1, startTime: '08:00', endTime: '08:45' },
+  { number: 2, startTime: '08:55', endTime: '09:40' },
+  { number: 3, startTime: '10:05', endTime: '10:50' },
+  { number: 4, startTime: '10:55', endTime: '11:40' },
+  { number: 5, startTime: '14:00', endTime: '14:45' },
+  { number: 6, startTime: '14:55', endTime: '15:40' },
+  { number: 7, startTime: '16:10', endTime: '16:55' },
+  { number: 8, startTime: '17:05', endTime: '17:50' },
+  { number: 9, startTime: '18:30', endTime: '19:15' },
+  { number: 10, startTime: '19:25', endTime: '20:10' },
 ];
 
 function cleanText(value) {
@@ -188,6 +196,15 @@ function getCurrentTermInfo(doc) {
   };
 }
 
+function computeStartDate(termText) {
+  const match = String(termText || '').match(/(\d{4})[^0-9]*(\d{4})?[^0-9]*[第]?(\d+)/);
+  if (!match) return null;
+  const startYear = parseInt(match[1], 10);
+  const semester = parseInt(match[3], 10);
+  if (semester === 1) return `${startYear}-09-01`;
+  return `${startYear + 1}-02-24`;
+}
+
 function isScheduleDoc(doc) {
   return !!(doc && (doc.getElementById('courseSche') || doc.querySelector('#term')));
 }
@@ -246,12 +263,14 @@ async function runImportFlow() {
 
     const allWeeks = courses.flatMap(course => course.weeks);
     const semesterTotalWeeks = allWeeks.length ? Math.max(...allWeeks) : 20;
+    const semesterStartDate = computeStartDate(termInfo?.text) || null;
 
     await window.AndroidBridgePromise.saveCourseConfig(JSON.stringify({
       semesterTotalWeeks,
-      semesterStartDate: null,
+      semesterStartDate,
       firstDayOfWeek: 1
     }));
+    await window.AndroidBridgePromise.savePresetTimeSlots(JSON.stringify(TIME_SLOTS));
     await window.AndroidBridgePromise.saveImportedCourses(JSON.stringify(courses));
 
     AndroidBridge.showToast(`导入成功：共 ${courses.length} 门课程`);

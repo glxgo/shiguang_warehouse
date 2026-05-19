@@ -1,8 +1,3 @@
-// 文件: XYAFU_01.js
-// 功能：从信阳农林学院青果教务系统获取课程表，解析后导入到拾光课程表
-// 适配：信阳农林学院青果教务系统
-// 维护者：glxgo
-
 const BASE = `${window.location.origin}`;
 const CONTROL_PAGE = '/student/xkjg.wdkb.jsp?menucode=S20301';
 const TIMETABLE_PAGE = '/student/wsxk.xskcb10319.jsp?params=';
@@ -415,10 +410,11 @@ async function runImportFlow() {
 
     const allWeeks = courses.flatMap(course => course.weeks);
     const semesterTotalWeeks = allWeeks.length ? Math.max(...allWeeks) : 20;
+    const semesterStartDate = term.xq === '1' ? `${term.xn}-09-01` : `${Number(term.xn) + 1}-02-24`;
 
     await window.AndroidBridgePromise.saveCourseConfig(JSON.stringify({
       semesterTotalWeeks,
-      semesterStartDate: null,
+      semesterStartDate,
       firstDayOfWeek: 1
     }));
     await window.AndroidBridgePromise.savePresetTimeSlots(JSON.stringify(timeSlots));
