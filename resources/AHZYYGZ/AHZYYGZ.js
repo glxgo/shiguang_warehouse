@@ -403,10 +403,11 @@ async function runImportFlow() {
 
     const allWeeks = courses.flatMap(course => course.weeks);
     const semesterTotalWeeks = allWeeks.length ? Math.max(...allWeeks) : 20;
+    const semesterStartDate = term.xq === '1' ? `${term.xn}-09-01` : `${Number(term.xn) + 1}-02-24`;
 
     await window.AndroidBridgePromise.saveCourseConfig(JSON.stringify({
       semesterTotalWeeks,
-      semesterStartDate: null,
+      semesterStartDate,
       firstDayOfWeek: 1
     }));
     await window.AndroidBridgePromise.savePresetTimeSlots(JSON.stringify(TIME_SLOTS));
