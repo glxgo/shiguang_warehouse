@@ -1,3 +1,8 @@
+// 文件: ZJUT_01.js
+// 功能：从浙江工业大学正方教务系统获取课程表，解析后导入到拾光课程表
+// 适配：浙江工业大学正方教务系统
+// 维护者：glxgo
+
 const BASE = `${window.location.origin}/jwglxt`;
 const GNMKDM = 'N253508';
 const INDEX_PATH = `/kbcx/xskbcx_cxXskbcxIndex.html?gnmkdm=${GNMKDM}&layout=default`;

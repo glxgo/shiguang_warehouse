@@ -6,4 +6,4 @@ adapters:
     asset_js_path: "wenhua_01.js"
     import_url: "https://jw1.hustwenhua.net/jwglxt/xtgl/login_slogin.html"
     maintainer: "glxgo"
-    description: ""
+    description: "文华学院教务,登录后需要进入教务系统才可以点击导入,非本校开发者适配如果有误建议提交issues"

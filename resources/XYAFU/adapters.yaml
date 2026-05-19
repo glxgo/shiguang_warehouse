@@ -6,4 +6,4 @@ adapters:
     asset_js_path: "xyafu_01.js"
     import_url: "https://sso.xyafu.edu.cn/sso/login?service=https%3A%2F%2Fjwgl.xyafu.edu.cn%2Fcaslogin"
     maintainer: "glxgo"
-    description: ""
+    description: "信阳农林学院教务,登录后需要进入教务系统才可以点击导入,非本校开发者适配如果有误建议提交issues"

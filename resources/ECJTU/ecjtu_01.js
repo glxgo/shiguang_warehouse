@@ -1,3 +1,8 @@
+// 文件: ECJTU_01.js
+// 功能：从华东交通大学系统获取课程表，解析后导入到拾光课程表
+// 适配：华东交通大学教务系统
+// 维护者：glxgo
+
 const BASE = window.location.origin;
 const SCHEDULE_PATHS = [
   '/Schedule/Schedule_getUserSchedume.action?item=0207',

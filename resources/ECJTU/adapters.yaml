@@ -6,4 +6,4 @@ adapters:
     asset_js_path: "ecjtu_01.js"
     import_url: "https://jwxt.ecjtu.edu.cn/index.action"
     maintainer: "glxgo"
-    description: ""
+    description: "华东交通大学教务,登录后需要进入教务系统才可以点击导入,非本校开发者适配如果有误建议提交issues"
